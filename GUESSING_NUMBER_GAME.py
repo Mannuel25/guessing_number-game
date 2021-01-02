@@ -7,7 +7,7 @@ def guessingNumberGame():
 	while play_game == 'yes' or play_game == 'YES':
 		print('\nGreat..let\'s get started!')
 		number = int(input('Guess a number between 1 and 100: '))
-		if number <= 100:
+		if 1 <= number <= 100:
 			number_of_guesses += 1
 			randomNumber = random.randint(1,100)
 			if number > randomNumber:
